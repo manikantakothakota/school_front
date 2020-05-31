@@ -1,0 +1,147 @@
+<div class="col-md-12 user-container">
+    <h2 class="text-center">Edit User</h2>
+    <form [formGroup]="editForm" (ngSubmit)="onSubmit()">
+  
+      <div class="col-md-6">
+        <div class="form-group">
+          <label for="firstName">First Name:</label>
+          <input type="text" formControlName="firstName" placeholder="First Name" name="firstName" class="form-control"
+            id="firstName">
+        </div>
+  
+        <div class="form-group">
+          <label for="lastName">Last Name:</label>
+          <input type="text" formControlName="lastName" placeholder="Last name" name="lastName" class="form-control"
+            id="lastName">
+        </div>
+  
+        <div class="form-group">
+          <label for="fatherName">Father Name:</label>
+          <input type="text" formControlName="fatherName" placeholder="Father Name" name="fatherName" class="form-control"
+            id="fatherName">
+        </div>
+  
+        <div class="form-group">
+          <label for="motherName">Mother Name:</label>
+          <input type="text" formControlName="motherName" placeholder="Mother Name" name="MotherName" class="form-control"
+            id="motherName">
+        </div>
+  
+        <div class="form-group">
+          <label for="username">User Name:</label>
+          <input type="text" formControlName="userName" placeholder="userName" name="userName" class="form-control"
+            id="userName">
+        </div>
+  
+        <div class="form-group">
+          <label for="password">PassWord:</label>
+          <input type="password" formControlName="password" placeholder="passWord" name="passWord" class="form-control"
+            id="passWord" readonly="readonly">
+        </div>
+  
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="text" formControlName="email" placeholder="email" name="email" class="form-control" id="email">
+        </div>
+  
+        <div class="form-group">
+          <label for="phone">Phone:</label>
+          <input type="text" formControlName="phone" placeholder="phone" name="phone" class="form-control" id="phone">
+        </div>
+  
+        <div class="form-group">
+          <label for="roles">Roles:</label>
+          <input type="text" formControlName="roles" placeholder="roles" name="roles" class="form-control" id="roles">
+        </div>
+  
+        <div class="form-group">
+          <label for="permissions">Permissions:</label>
+          <input type="text" formControlName="permissions" placeholder="permissions" name="permissions"
+            class="form-control" id="permissions">
+        </div>
+  
+        <div class="form-group">
+          <label for="dateOfBirth">DateOfBirth:</label>
+          <input type="datetime" formControlName="dateOfBirth" placeholder="dateOfBirth" name="dateOfBirth"
+            class="form-control" id="dateOfBirth">
+        </div>
+  
+        <div class="form-group">
+          <label for="joiningDate">JoiningDate:</label>
+          <input type="datetime" formControlName="joiningDate" placeholder="joiningDate" name="joiningDate"
+            class="form-control" id="joiningDate">
+        </div>
+  
+        <div class="form-group">
+          <label for="endingDate">EndigDate:</label>
+          <input type="datetime" formControlName="endingDate" placeholder="endingDate" name="endingDate" class="form-control"
+            id="endingDate">
+        </div>
+  
+        <div class="form-group">
+          <label for="schoolId">SchoolId:</label>
+          <input type="schoolId" formControlName="schoolId" placeholder="schoolId" name="schoolId" class="form-control"
+            id="schoolId">
+        </div>
+  
+        <div class="form-group">
+          <label for="categoryId">categoryId:</label>
+          <input type="text" formControlName="categoryId" placeholder="categoryId" name="categoryId" class="form-control"
+            id="categoryId">
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div formGroupName="address">
+          <h3>Address</h3>
+  
+          <div class="form-group">
+            <label for="houseNum">HouseNum:</label>
+            <input type="text" formControlName="houseNum" placeholder="houseNum" name="houseNum" class="form-control"
+              id="houseNum">
+          </div>
+  
+          <div class="form-group">
+            <label for="street">street:</label>
+            <input type="text" formControlName="street" placeholder="street" name="street" class="form-control"
+              id="street">
+          </div>
+  
+          <div class="form-group">
+            <label for="village">village:</label>
+            <input type="text" formControlName="village" placeholder="village" name="village" class="form-control"
+              id="village">
+          </div>
+  
+          <div class="form-group">
+            <label for="landmark">landmark:</label>
+            <input type="text" formControlName="landmark" placeholder="landmark" name="landmark" class="form-control"
+              id="landmark">
+          </div>
+  
+          <div class="form-group">
+            <label for="mandal">mandal:</label>
+            <input type="text" formControlName="mandal" placeholder="mandal" name="mandal" class="form-control"
+              id="mandal">
+          </div>
+  
+          <div class="form-group">
+            <label for="district">district:</label>
+            <input type="text" formControlName="district" placeholder="district" name="district" class="form-control"
+              id="district">
+          </div>
+  
+          <div class="form-group">
+            <label for="state">state:</label>
+            <input type="text" formControlName="state" placeholder="state" name="state" class="form-control" id="state">
+          </div>
+  
+          <div class="form-group">
+            <label for="pincode">pincode:</label>
+            <input type="text" formControlName="pincode" placeholder="pincode" name="pincode" class="form-control"
+              id="pincode">
+          </div>
+        </div>
+      </div>
+      <button type="submit" class="btn btn-success">Update</button>
+    </form>
+  </div>

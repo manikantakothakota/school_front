@@ -1,0 +1,28 @@
+<div class="col-md-12 user-container">
+    <h2 style="margin: auto"> School Details</h2>
+    <button class="btn btn-danger" style="width:100px" (click)="addSchool()"> Add School</button>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th class="hidden">Id</th>
+                <th>Sl.No</th>
+                <th>SchoolName</th>
+                <th>Anniversary</th>
+                <th>village</th>
+                <th colspan="2">Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let school of schools">
+                <td class="hidden"></td>
+                <td>{{school.schoolId}}</td>
+                <td>{{school.name}}</td>
+                <td>{{school.anniversary |customDate}}</td>
+                <td>{{school.address.village}}</td>
+                <td><button class="btn btn-success" (click)="deleteSchool(school.schoolId)"> Delete</button>
+                    <button class="btn btn-success" (click)="editSchool(school.schoolId)" style="margin-left: 20px;">
+                        Edit</button></td>
+            </tr>
+        </tbody>
+    </table>
+</div>

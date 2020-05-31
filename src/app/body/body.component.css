@@ -1,0 +1,39 @@
+
+ nav {
+    float: left;
+    width: 15%;
+    height:fit-content; 
+    background: #ccc;
+    padding: 20px;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+    font-size: 20px;
+  }
+  
+  article {
+    float: left;
+    padding: 20px;
+    width: 85%;
+    background-color: #f1f1f1;
+    height: fit-content; 
+  }
+   
+  section:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+
+
+ @media (max-width: 600px) {
+    nav, article {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  

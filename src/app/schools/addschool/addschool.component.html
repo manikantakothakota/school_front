@@ -1,0 +1,80 @@
+<div class="col-md-12 user-container">
+    <h2 class="text-center">Add User</h2>
+    <form [formGroup]="addForm" (ngSubmit)="onSubmit()">
+  
+      <div class="col-md-6">
+        <div class="form-group">
+          <label for="name">School Name:</label>
+          <input type="text" formControlName="name" placeholder="School Name" name="name" class="form-control"
+            id="name">
+        </div>
+  
+        <div class="form-group">
+          <label for="typeId">TypeId:</label>
+          <input type="number" formControlName="typeId" placeholder="Last name" name="typeId" class="form-control"
+            id="typeId">
+        </div>
+  
+        <div class="form-group">
+          <label for="anniversary">anniversary:</label>
+          <input type="date" formControlName="anniversary" placeholder="anniversary" name="anniversary" class="form-control"
+            id="anniversary">
+        </div>
+  
+       
+      </div>
+      <div class="col-md-6">
+        <div formGroupName="address">
+          <h3>Address</h3>
+  
+          <div class="form-group">
+            <label for="houseNum">HouseNum:</label>
+            <input type="text" formControlName="houseNum" placeholder="houseNum" name="houseNum" class="form-control"
+              id="houseNum">
+          </div>
+  
+          <div class="form-group">
+            <label for="street">street:</label>
+            <input type="text" formControlName="street" placeholder="street" name="street" class="form-control"
+              id="street">
+          </div>
+  
+          <div class="form-group">
+            <label for="village">village:</label>
+            <input type="text" formControlName="village" placeholder="village" name="village" class="form-control"
+              id="village">
+          </div>
+  
+          <div class="form-group">
+            <label for="landmark">landmark:</label>
+            <input type="text" formControlName="landmark" placeholder="landmark" name="landmark" class="form-control"
+              id="landmark">
+          </div>
+  
+          <div class="form-group">
+            <label for="mandal">mandal:</label>
+            <input type="text" formControlName="mandal" placeholder="mandal" name="mandal" class="form-control"
+              id="mandal">
+          </div>
+  
+          <div class="form-group">
+            <label for="district">district:</label>
+            <input type="text" formControlName="district" placeholder="district" name="district" class="form-control"
+              id="district">
+          </div>
+  
+          <div class="form-group">
+            <label for="state">state:</label>
+            <input type="text" formControlName="state" placeholder="state" name="state" class="form-control" id="state">
+          </div>
+  
+          <div class="form-group">
+            <label for="pincode">pincode:</label>
+            <input type="text" formControlName="pincode" placeholder="pincode" name="pincode" class="form-control"
+              id="pincode">
+          </div>
+        </div>
+      </div>
+      <button type="submit" class="btn btn-success">Add</button>
+    </form>
+  </div>
